@@ -2,7 +2,7 @@
 
 *:not(body):not(html) {
   box-sizing:border-box;
-  border:1px dashed #000;
+  /*border:1px dashed #000;*/
 }
 
 /*.columns {
@@ -33,7 +33,10 @@ img {
 
 .columns {
   margin: 0 auto;
-  border: 2px solid red;
+}
+
+.content {
+  overflow: auto;
 }
 
 #logo {
@@ -49,10 +52,41 @@ ul {
 
 li {
   display: inline;
-  padding-right: 2%;
+  padding-right: 3%;
 
 }
 
 .header {
   clear: both;
+  width: 90%;
+  padding-left: 3%;
+}
+
+
+/* MEDIA QUERIES ------------ */
+
+@media screen and (min-width: 800px) {
+  #logo {
+    float: left;
+  }
+  ul {
+    float: right;
+    width: 30%;
+    margin-top: 20px;
+  }
+  .columns {
+    width: 49%;
+    float: left;
+    margin: 1% 1% 1% 0;
+  }
+
+}
+
+@media screen and (min-width: 1300px) {
+  .columns {
+    width: 24%;
+  }
+  ul {
+    width: 25%;
+  }
 }
