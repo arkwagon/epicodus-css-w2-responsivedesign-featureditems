@@ -5,10 +5,10 @@
   border:1px dashed #000;
 }
 
-.columns {
+/*.columns {
   min-height: 100px !important;
-  /*margin: .5%;*/
-}
+  margin: .5%;
+}*/
 
 /* End for testing */
 
@@ -19,4 +19,40 @@
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.columns {
+  margin: 0 auto;
+  border: 2px solid red;
+}
+
+#logo {
+  /*float: left;*/
+}
+
+ul {
+  /*float: right;*/
+  list-style-type: none;
+  overflow: auto;
+  padding-left: 0;
+}
+
+li {
+  display: inline;
+  padding-right: 2%;
+
+}
+
+.header {
+  clear: both;
 }
